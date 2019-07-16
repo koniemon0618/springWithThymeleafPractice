@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>top page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table class="list">
+  <tr>
+    <th>ID</th>
+    <th>名前</th>
+  </tr>
+  <tr th:each="list:${list}">
+    <td th:text="${list.id}"></td>
+    <td th:text="${list.name}"></td>
+  </tr>
+</table>
+</body>
+</html>
